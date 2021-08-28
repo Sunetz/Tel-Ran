@@ -1,0 +1,57 @@
+#box{
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+}
+
+.title{
+    color: red;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: darkgray;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    background-color: cornflowerblue;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-left: 20px;
+    
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(34, 116, 45);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.active{
+    font-size: 60px;
+}
+
+.black{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+}

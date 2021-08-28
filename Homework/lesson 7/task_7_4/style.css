@@ -1,0 +1,85 @@
+.content{
+    margin-left: 180px;
+    height: 900px;
+}
+.box{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 900px;
+    
+}
+.right{
+    float: left;
+}
+.box img{
+    position: absolute;
+    top: -50px;
+    left: -30px;   
+    box-sizing: border-box;
+}
+.text{
+    font-family: 'Roboto', sans-serif;
+    font-stretch: extra-condensed;
+    width: 600px;
+    height: 450px;
+    
+}
+.about {    
+    _margin-left: 50px;
+    padding-left: 40px;
+    background-color: white;
+    
+}
+.contact {
+    padding-left: 40px;
+    _margin-left: 50px;
+    color: white; 
+    background-color: black; 
+    }
+.clear{
+    clear: both;
+}
+h2{ padding-top: 40px;
+    font-size: 56px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.about a{
+    color: black;
+    
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+p{
+    font-family: "Calibri", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    
+}
+#freepik{
+    font-family: sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+}
+address{
+    font-style: normal;
+    margin-bottom: 24px;
+}
+.telephone{
+    font-family: 'Helvetica', sans-serif;
+    line-height: 40px;
+}
+.contact p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+.about h2{
+    padding-top: 120px;
+}

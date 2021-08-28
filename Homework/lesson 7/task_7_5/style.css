@@ -1,0 +1,55 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.redblock{
+    position: relative;
+    margin-top:250px;
+    height: 200px;
+    background-color: rgb(245, 17, 28);
+    z-index: 1;
+}
+img{
+    position: absolute;
+    top: -30px;
+    left: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: 200px;
+    z-index: 2;
+}
+h1{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 50px;
+    margin-top: 150px;
+}
+p{
+    font-family: 'Gothic A1', sans-serif;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(245, 17, 28);
+    padding: 20px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+#freepik{
+    color:rgb(245, 17, 28)
+}
+button a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,27 @@
+Vi and VIM
+ZZ (Note: capitals) - Save and exit
+:q! - discard all changes, since the last save, and exit
+:w - save file but don’t exit
+:wq - again, save and exit
+:x - again, save and exit
+G  (shift g) - move to the last line
+/ - search (n - next) 
+i - insert text, edit mode. ECS to exit 
+u - undo last action
+dd - delete the current line ( i mode not needed) 
+Del - delete single character ( i mode not needed)
+
+Homework 1 
+   Создать текстовый файл  /home/user/start/1.txt , создав перед этим необходимую директорию.
+   Добавить слово Start в текстовый документ, созданный ранее.
+   Дописать в конец документа текущую дату, использовав date (запуск командой date).
+   Скопировать получившийся документ в /opt/task/start.txt (Предварительно создаем необходимую директорию)
+   В документ /opt/task/start.txt  дописать последние 8 строчек из списка всех файлов (и скрытых), лежащих в /
+*   Заменить в документе /opt/task/start.txt  слово root на ваше имя c помощью vi или nano
+любой файл можно “скачать” при помощи команды 
+export_file   полный путь к файлу
+В моем случае export_file /tmp/history, где history - имя файла с результатом сравнения
+результат  /opt/task/start.txt пришлите мне
+** То же, но при помощи sed с выгрузкой результата в /home/user/start/sed.txt
+12:22
+***   Сравните файлы  /home/user/start/sed.txt и /opt/task/start.txt. Вывод сравнения запишите в любой файл  

@@ -1,0 +1,71 @@
+.container {
+width: 600px;
+margin: 100px auto;
+}
+
+.container h2{
+    padding: 15px;
+    border: 1px solid black;
+    width: 200px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+    transition: 2s 1s; /*первый для дьюрейшен, второй - для задержки*/
+}
+
+.container h2:hover{
+    background-color: cadetblue;
+}
+
+.item{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    top: 100px;
+    left: 100px;
+    /*animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    _animation-direction: reverse;
+    _animation-iteration-count: infinite;*/
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation: moving 2s linear forwards ;
+    font-size: 15px;
+    
+}
+.item:hover{
+    animation-play-state: running;
+}
+@keyframes moving{
+    0%{
+        left: 100px;
+    }
+    25%{left: 400px;
+        top: 400px;
+        background-color: darkorange;}
+    50%{    
+        left: 600px;
+        top: 100px;
+        background-color: rgb(156, 47, 147);}
+    100%{
+        left: 800px;
+        transform: rotate(360deg) scale(3);
+        font-size: 2rem;
+    }
+/*    
+    @keyframes flash{
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}*/

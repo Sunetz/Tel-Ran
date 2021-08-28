@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 34</title>
+    <style>
+        .fs-15{
+            font-size: 15px;
+        }
+        .fs-25{
+            font-size: 25px;
+        }
+        .fs-35{
+            font-size: 35px;
+        }
+        .pink{
+            color: pink;
+        }
+        .yellowgreen{
+            color: yellowgreen;
+        }
+        .orange{
+            color: orange;
+        }
+        .square-area{
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .square{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+        .clicknumber{
+            position: absolute;
+            top: 20%;
+            left: 33%;
+            font-size: 100px;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <button id='make-fs-15'>15px</button>
+        <button id='make-fs-25'>25px</button>
+        <button id='make-fs-35'>35px</button>
+    </p>
+    <p>
+        <button id='make-pink'>Pink</button>
+        <button id='make-yellowgreen'>Yellowgreen</button>
+        <button id='make-orange'>Orange</button>
+    </p>
+
+
+    <p class="changedText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis excepturi consequuntur impedit id hic placeat perferendis dignissimos quisquam delectus officiis?</p>
+
+    <hr>
+    <p>
+        <input type="number" id="font-size" placeholder="Input font size">
+        <button id="set-size">set</button>
+    </p>
+    <p>
+        <input type="text" placeholder="Input color" id="color">
+        <button id="set-color">set</button>
+    </p>
+    <p id="textByYou">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste, dolore recusandae quas ipsam facilis quis placeat sequi. Pariatur, cumque. Praesentium necessitatibus aliquid dolorum at voluptatibus consequatur provident perferendis nesciunt.
+    </p>
+    <div class="square-area">
+        <div class="square"></div>
+        <div class="clicknumber">0</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

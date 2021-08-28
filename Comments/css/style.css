@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: 'Comfortaa', cursive;
+    width: 600px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right, .left {
+    margin-top: 20px;
+    background-color: aliceblue;
+    _padding: 10px;
+    width: 45%;
+    border-radius: 10px;
+}
+.right{
+    background-color: transparent;
+}
+.users-list h3{
+    cursor: pointer;
+}
+.users-list h3:hover{
+    background-color: aliceblue;
+}
+.left h4, .left p{
+    cursor: pointer;
+    padding: 0 20px;
+}
+.left h4:hover{
+    color: yellowgreen;
+}

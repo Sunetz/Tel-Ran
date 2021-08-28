@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style: none;
+    background-color: cornflowerblue;
+}
+
+nav>ul>li{
+    float: left;
+}
+
+nav ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 20px 10px;
+}

@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px auto;
+    min-width: 1000px;
+}
+.background {
+    
+    background: url('../lesson 7/images/bg-new.png') no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+img.phone{
+    width: 30%;
+    height: auto;
+    float: right;
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
+    z-index: 1;
+}
+.orange-bg{
+    background-color: rgb(255, 153, 0);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.content{
+    position: absolute; 
+    top: -3vh;
+    left: 20vw;
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 100px;
+    width: 1000px;
+    color: silver;
+    z-index: 3;
+    
+}
+
+ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    
+}
+ul.nav li{
+    float: left;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+}
+.upper-text{
+    
+    text-transform: uppercase;
+    color: rgb(233, 233, 233);
+    font-family: 'Monserrat', sans-serif;
+    
+}
+h1 {
+    width:400px;
+    font-weight: normal;
+    float: left;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.card{
+    width: calc(100%/4 - 60px);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px;
+    box-sizing: border-box;
+    margin:20px 20px;
+    float: left;
+    
+}
+.clear {
+    clear: both;
+}
+.directions{
+    margin: 0 auto;
+    _float: left;
+    _text-align: center;
+    position: relative;
+    z-index: 3;
+    top: 50vh;
+    
+
+}
+button{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 15px;
+    padding: 15px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+

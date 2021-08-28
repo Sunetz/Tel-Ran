@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    - let p = 3, n = 7;
+    - let m = n*n;
+
+style
+	- for(let i = 0; i < n; i++)
+		| .tile:nth-child(#{n}n + #{i + 1}) { --x: #{i} }
+		| .tile:nth-child(n + #{n*i + 1}) { --y: #{i} }
+.cube(style=`--n: ${n}`)
+	- for(let i = 0; i < p; i++)
+		.face(style=i < p - 1 ? `--f: ${i}` : null)
+			- for(let j = 0; j < m; j++)
+				.tile
+    <script src="/main.js"></script>
+</body>
+</html>

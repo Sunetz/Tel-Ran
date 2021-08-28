@@ -1,0 +1,41 @@
+.content{
+    background-color: cornflowerblue;    
+    height: 700px;
+}
+/*.box{
+    _width: 450px;
+    _height: 600px;
+    _display: inline-block;
+    margin: 20px;
+    _background-color: white;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-bottom: 30px;*/
+
+img{
+    float: left;
+    width: 500px;
+    margin: 50px 80px 0px 50px;
+}
+.char{
+    float: left;
+    font-size: 44rem;
+    color: white;
+    opacity: 30%;
+    
+}
+.text{
+    width: 260px;
+    color:black;
+    _text-align: left;
+    _margin-top: 150px;
+    _margin-left: -150px;
+}
+h1{
+    font-size: 50px;
+    font-family: Georgia,'Georgia', serif;
+}
+p{
+    font-family: 'Comfortaa', cursive;
+    line-height: 30px;
+}

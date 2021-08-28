@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speisekarte</title>
+    <script src="./main.js" defer></script>
+    <style>
+        .table {
+        border: 1px solid #eee;
+        table-layout: fixed;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: larger;
+    }
+        .table th {
+            font-weight: bold;
+            padding: 15px;
+            background-color: #222222;
+            border: 1px solid #DDDDDD;
+            color: white;
+        }
+        .table td {
+            padding: 25px;
+            border: 1px solid #eee;
+            text-align: left;
+        }
+        .table tbody tr:nth-child(odd) {
+            background-color: #fff;
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #fff;
+        }
+        table{
+            text-transform: uppercase;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 1000px;
+            margin: 30px auto;
+        }
+        .nav{
+            background-color: rgb(70, 70, 70);
+            display: flex;
+            flex-direction: row;
+            
+        }
+        ul{
+            list-style: none;
+            width: 30%;
+            margin: 0;
+            padding: 10px;
+            padding-left: 0;
+        }
+        li{
+            display: inline;
+            text-transform: uppercase;
+            border-right: rgb(255, 255, 255) 1px solid;
+            padding: 10px 20px;           
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .active{
+            background-color: yellowgreen;
+        }
+        .card{
+            width: 24%;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            display: inline-block;
+            background-color: rgb(236, 236, 236);  
+            cursor: pointer;        
+        }
+        .card img{
+            width: 150px;
+            height: 150px;
+        }
+        .card p{
+            margin-bottom: 0;
+        }
+        .card h3{
+            margin-top: 0;
+        }
+        .card button{
+            color: white;
+            background-color: yellowgreen;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+        .card button:hover{
+            background-color: cornflowerblue;
+        }
+        #root{
+            _width: 1000px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <ul>
+                <li><a href="#home" id="homeBtn" class="active">Home</a></li>
+                <li><a href="#cart" id="cartBtn">Cart</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div id="root">
+           
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+.content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid gainsboro;
+
+    
+    
+    
+
+}
+.side {
+    float:left;
+    width: 50%;
+    }
+
+.image {
+    width: 380px;
+    height: 380px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.parfume {
+    width: 380px;
+    height: 100%;
+    margin: 10 auto;
+    object-fit: cover;
+}
+.clear {
+    clear:both;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 113px;
+    
+
+}
+.box{
+    float: left;
+    width: 49%;
+    height: 1000px;
+    overflow: hidden;
+
+}
+
+
+.box img {
+    width: 750px;
+    height: 90%;
+    margin: 10 auto;
+    object-fit: cover;
+    
+}
+
+.right{
+    box-sizing: border-box;
+    
+}

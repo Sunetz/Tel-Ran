@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    width: 60%;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.navigation{
+    background-color: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    display: flex;
+    _flex-direction: row;
+    font-weight: 400;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+}
+.info-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn{
+    width: fit-content;
+    height: 40px;
+    padding: 10px;
+    border-right: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    margin-right: 20px;
+}
+.btn:hover{
+    background-color: rgb(98, 141, 11);
+}
+.active{
+    background-color: yellowgreen;
+}
+.person{
+    _width: 400px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+.person:hover{
+    background-color: rgb(224, 224, 224);
+}
+.active-person{
+    background-color: rgb(209, 231, 240);
+}
+
+.short-info{
+    width: 30%;
+}
+.info-area{
+    margin-top: 20px;
+}
+.full-info{
+    margin-right: 20%;
+    width: 40%;
+}
+.inner{
+    margin-right: 20%;
+    border-radius: 20px;
+    display: block;
+    background-color: rgb(209, 231, 240);
+    text-align: left;
+    padding: 30px 30px;
+    width: 100%;
+}
+i, .full-info h3, #descript{
+    margin: 10px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.form-area{
+    width: 40%;
+    text-align: right;
+    margin: 50px auto;
+    margin-left: 150px;
+    
+}
+input{
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px yellowgreen solid;
+}
+input:hover{
+    cursor: pointer;
+    border: 4px rgb(191, 245, 120) solid;
+}
+
+button{
+    background-color: skyblue;
+    color: snow;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: steelblue;
+}
+#search{
+    width: 450px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+.fa-search{
+    margin-right: 20px;
+}
+.btnContacts{
+    margin: 0;
+}
+h4{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;    
+}
+input:focus{
+    outline-color: rgba(180, 238, 45, 0.37);
+}
+.fa-search{
+    cursor: pointer;
+}
+.is-invalid{
+    border: 2px crimson solid;
+}

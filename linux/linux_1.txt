@@ -1,0 +1,36 @@
+   0 cd /home
+   1 mkdir -p /home/animal
+   2 ls
+   3 cd /animal
+   4 cd animal
+   5 mkdir -p dogs
+   6 mkdir -p cats
+   7 mkdir -p fish
+   8 ls
+   9 touch ../animal/dogs/pluto.txt
+  10 touch ../animal/cats/garfield.txt
+  11 touch ../animal/fish/nemo.txt
+  12 cd #
+  13 cd /tmp
+  14 touch adam.txt
+  15 ls
+  16 cp adam.txt /home/humans
+  17 cd #/home
+  18 cd /home
+  19 ls
+  20 rm /home/humans
+  21 ls
+  22 mkdir humans
+  23 ls
+  24 cp ../tmp/adam.txt humans
+  25 cd humans
+  26 ls
+  27 touch ../tmp/evA.txt
+  28 touch ../../tmp/evA.txt
+  29 mv ../../tmp/evA.txt ../../opt/eve
+  30 mv ../../opt/eve .
+  31 ls
+  32 cd /home
+  33 tree
+  34 history>tmp/history.txt (забыла, что не в той директории)
+  35 history>../tmp/history.txt

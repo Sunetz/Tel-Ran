@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Monserrat', sans-serif;
+    color: white;
+    position: relative;
+}
+a{ 
+    cursor: pointer;
+    color: white;
+}
+h3{
+    text-transform: uppercase;
+}
+
+/* Header */
+
+
+#header{
+    background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.21612394957983194) 70%, rgba(0,0,0,1) 100%), url('./images/Tomatoes_Pasta.jpg') ;
+    height: 100vh;
+    max-height: 800px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+#header .nav{
+    padding: 30px 230px;
+    display: flex;
+    align-items: center;
+    
+}
+#header #get-started{
+    color: white;
+    border: 2px solid white;
+    margin: 20px 0 40px;
+    padding: 20px 80px;
+    transition-property: background-color;
+    _transition-duration: 2s;
+    transition-timing-function: linear;
+    _transition-delay: 1s;
+    transition: 2s 1s; /*первый для дьюрейшен, второй - для задержки*/
+}
+
+#header #get-started:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.nav .logo img{
+    padding: 25px;
+    background-color: rgba(248, 2, 2, 0.712);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 2s;
+    transition: 2s 1s;
+}
+
+@media screen and (max-width: 800px){
+    #header .nav ul li:not(:last-child){
+        display: none;
+        
+    }
+    nav ul li img{
+        transform: scale(1.5);
+        position: relative;
+        right: -100px;
+        transition-duration: 0.5s;
+    }
+    nav .logo img{
+        transform: scale(1.5);
+        position: relative;
+        top: 30px;
+        transition-duration: 0.5s;
+        
+    }
+    #header a, h1, h3, h4{
+        transform: scale(0.8);
+    }
+    .card-container{
+        flex-direction: column;
+        
+    }
+    
+}
+
+#header .nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+    text-transform: uppercase;
+    animation: moving 2s linear forwards;
+}
+
+#header ul{
+    margin-left: auto;
+    
+    
+}
+
+#header h3{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 60px;
+    font-size: 2.5rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+#header h1{
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+#header a{
+    display: inline-block;
+    _margin: 20px 0 40px;
+    padding: 20px;
+    _border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header h4{
+    color:rgba(255,255,255,0.7);
+    text-transform: uppercase;
+}
+
+#header h4 span{
+    font-weight: 700;
+    color:white;
+    text-decoration: underline;
+}
+
+#header h4 span:hover{
+    cursor: pointer;
+}
+
+#info{
+    padding: 100px 0;
+}
+
+#info .cards-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#info .card{
+    margin: 0 20px;
+    flex-basis: calc(100%/3 - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#info .card-img{
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:2px solid black;
+    margin-bottom: 15px;
+}
+
+#info .card-img img{
+    width: 100%;
+}
+
+#info .card h3{
+    font-size:1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* #info .card .divider{
+    height: 2px;
+    width: 80px;
+    margin-bottom: 10px;
+    background-color: #f57365;
+} */
+
+/* #info .card p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #777;
+    text-align: center;
+} */
+
+#info::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #777;
+    width: 100%;
+    margin-top: 80px;
+}
+/*
+
+
+.section-1{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.21612394957983194) 70%, rgba(0,0,0,1) 100%),
+    url('./images/Tomatoes_Pasta.jpg') no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+.section-1 .main{
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+nav .main-menu{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+nav .logo{
+    padding: 5px;
+    background-color: rgba(248, 2, 2, 0.712);
+    border-radius: 50%;
+}
+nav .main-menu a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px;
+}
+.main .text-container{
+    padding-top: 150px;
+}
+h1, h3, h4{
+    text-transform: uppercase;
+}
+h1{
+    font-size: 8.5rem;
+    padding: 10px;
+}
+h2{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    opacity: 70%;
+}
+.main .text-container .get-started{
+    display: inline-block;    
+    text-transform: uppercase;
+    padding: 20px 100px;
+    background-color: transparent;
+    border: 1px solid white;
+    text-decoration: none;
+}
+.main .text-container p{
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    nav .logo{
+        display: inline-block;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        transform: scale(1.3);
+    }
+    .menu a:not(:last-child){
+        display: none;
+    }
+
+}
+*/
+/*SECOND SECTION*/
+
+.section-2{
+    width: 100%;
+}
+.section-2 .main{
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+}
+.section-2 .main .card-container{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 100px;
+}
+.section-2 .main .card-container .icon{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top:25px;
+    left: 30px;
+}
+.section-2 .main .card-container .icon-container{
+    border: 3px solid black;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.section-2 .main .card-container p{
+    color: black;
+}
+.card-container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    animation-play-state: paused;
+    animation: be_less 2s linear forwards ;
+}
+@keyframes be_less{
+    0%{
+        width: 250px;
+    }
+    100%{
+    transform: scale(0.8);
+    }
+}
+.card-container .card:hover{
+    animation-play-state: running;
+    
+}
+.card-container .card h3{
+    color: black;
+    margin: 20px 0;
+}
+.card-container .card p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+}
+
+/*.main-menu .submenu{
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        display: flex;        
+}
+.main-menu .burder:hover .submenu{
+    display: flex;
+    
+}
+.main-menu ul{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    _margin-right: 60px;
+    _margin-top: 30px;
+    background-color: rgba(255, 165, 0, 0.5);
+}
+ul li{ 
+    position: relative;
+    width: 100px;
+    text-align: center;
+}*/
+
+/*THIRD SECTION*/
+
+.section-3{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.section-3 .main{
+    margin: 50px auto;
+    margin-bottom: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.section-3 .image-container{
+    flex-basis: 360px;
+    position: relative;
+    _width: 50%;
+    height: 480px;
+    overflow: hidden;
+    margin: 30px;
+}
+.section-3 .image-container .phone-image{
+    width: 100%;
+    position: absolute;
+    top:20px;
+    left:0;
+}
+.section-3 .image-container .bg-image{
+    width: 78%;
+    position: absolute;
+    top:25%;
+    right: 8%;
+
+}
+.section-3 .main .text-box{
+    color:black;
+    width: 600px;
+    flex-basis: calc(100% - (360px +3%));
+    margin-left: auto;
+    align-items: flex-start;
+    margin-bottom: 150px;
+}
+.text-box h3{
+    padding: 40px 0;
+}
+.text-box p{
+    padding-bottom: 15px;
+}
+.text-box img{
+    margin: 10px 0;
+    margin-right: 10px;
+}
+.text-box img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+/*FOURTH SECTION*/
+
+.section-4{
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    overflow: hidden;
+    z-index: 0;
+    font-family: "Nunito", sans-serif;
+    position: relative;
+    top:-40px;
+    text-align: center;
+    padding: 70px 0;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.2) 100%
+    ),
+    url('./images/Tomatoes_Pasta.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    }
+.section-4 .main{
+    position: relative;
+}
+.section-4 .main .content-box{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+}
+
+.section-4 .background{
+    width: 100%;
+    opacity: 70%;
+    margin-top: -575px;
+    position: relative;
+    
+}
+.section-4 .main .person{
+    display: flex;
+    padding-top: 100px;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-4 .main .person .erazer{
+    
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 4px solid gray;
+    border-radius: 50%;
+}
+
+.section-4 .main .person img{
+    width: auto;
+    height: 250%;
+    margin-left: -10px;
+}
+.section-4 .main .person .text-area{
+    padding-top: 50px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.content-box .rounds{
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.content-box .rounds .round{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;   
+}
+.content-box .rounds .round-1{
+    background-color: rgb(212, 212, 212);
+}
+.section-5{
+    width: 100%;
+    font-family: "Monserrat", sans-serif;
+    }
+.section-5 .main{
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+.section-5 .main h3{
+    color: black;
+}
+.section-5 .main .choice-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 50px auto;    
+}
+.section-5 .main .choice-box .choice-card{
+    display: flex;
+    flex-basis: calc(100%/5 - 10px);
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;    
+}
+.choice-card .txt{
+    position: absolute;
+    top: 80px;
+    width: 200px;
+}
+.choice-card .txt h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.choice-card .txt p{
+    font-style: italic;
+}
+.choice-card img{
+    width: 100%;
+}
+.choice-card .txt:hover{
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+}
+
+
+
+
+
+
+
+
+

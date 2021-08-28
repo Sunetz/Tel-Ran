@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Collection</title>
+    <script src="./main.js" defer></script>
+    <style>
+        .wrapper{
+            margin: 50px auto;
+            width: 1200px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+        section{
+            display: flex;
+            justify-content: space-between;
+        }
+        #right, #left{
+            width: 40%;
+            height: 600px;
+        }
+        .img-wrapper{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .cards img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        button{
+            width: 100px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: yellowgreen;
+            border: none;
+            cursor: pointer;
+            transition: 1s ease;
+            margin: 20px;
+            color: white;
+            font-size: 1.3rem;
+        }
+        button:hover{
+            transform: scale(1.1);            
+        }
+        .cards{
+            width: 200px;
+            height: 200px;
+            /* background-color: skyblue; */
+            display: inline-block;
+            margin: 10px;
+            border-radius: 10px;
+            color: rgb(59, 55, 55);
+            transition: 1s ease;
+            vertical-align: middle;
+            position: relative;
+        }
+        .cards:hover{
+            transform: scale(1.1); 
+        }
+        h3{
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            right: 10%;
+            text-transform: uppercase;
+            background-color: yellowgreen;
+            border-radius: 5px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <section>
+            <div id="left">
+                <button id="dogs">DOGS</button>
+                <button id="horses">HORSES</button>
+                <button id="cats">CATS</button>
+                <div class="content"></div>
+            </div>
+            <div id="right">
+                
+            </div>
+        </section>
+    </div>
+</body>
+</html>

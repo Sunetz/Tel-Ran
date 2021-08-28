@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+    <script src="./contacts.js" defer></script>
+    <script src="./storage.js" defer></script>
+    <script src="./app.js" defer></script>
+    <style>
+        .wrapper{
+            width: 800px;
+            margin: 50px auto;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .right, .left{
+            width: 45%;
+        }
+        button{
+            width: 210px;
+            height: 50px;
+        }
+        input{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>contact list</h2>
+        <div class="container">
+            <div class="left">
+                <form action="#" id="contact-form">
+                    <input type="text" name="name" id="name" placeholder="name">
+                    <br>
+                    <input type="text" name="last-name" id="last-name" placeholder="lastname">
+                    <br>
+                    <input type="text" name="phone" id="phone" placeholder="phone">
+                    <br>
+                    <input type="text" name="email" id="email" placeholder="email">
+                    <br>
+                    <button id='submit'>Add</button>
+                </form>
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>

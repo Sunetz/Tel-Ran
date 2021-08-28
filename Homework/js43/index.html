@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navigation">
+            <div class="btnContacts btn active">CONTACTS</div>
+            <div class="btnAdd btn">ADD NEW CONTACT</div>
+            <input type="text" id='search' placeholder="search">
+            <i class="fas fa-search"></i>
+        </div>
+        <hr>
+
+        <div class="info-area">
+            <div class="short-info">
+            </div>
+
+            <div class="full-info">
+                <div class="message">
+                    No selected contact
+                </div>                           
+            </div>
+        </div>
+        <div class="addContactPage">
+            <h4 id='error' class="hide">All fields must be filled</h4>
+            <br>
+            <div class="form-area hide">               
+                
+                <input type="text" name="name" id='name' placeholder="enter name">
+                <br>
+                
+                <input type="tel" name="phone" id="phone" placeholder="enter phone number">
+                <br>
+                
+                <input type="email" name="email" id="email" placeholder="enter e-mail">
+                <br>
+                
+                <input type="text" name="city" id="city" placeholder="enter city">
+                <br>
+                
+                <input type="text" name="description" id="description" placeholder="enter description">
+                <br>
+                <button type="submit" value="Add new contact" id='btnAdd'>Add new contact</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

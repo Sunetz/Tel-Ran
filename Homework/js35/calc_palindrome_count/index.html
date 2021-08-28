@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="calc">
+            <h2>calculator</h2>
+            <p>
+            <input type="number" id="fn-1-sum" placeholder="number"> + <input type="number" id="fn-2-sum" placeholder="number">
+            <button id="addition">add</button>
+            <span id="sumResult"></span>
+            </p>
+            <p>
+            <input type="number" id="fn-1-sub" placeholder="number"> - <input type="number" id="fn-2-sub" placeholder="number">
+            <button id="sub">sub</button>
+            <span id="subResult"></span>
+            </p>
+            <p>
+            <input type="number" id="fn-1-multi" placeholder="number"> * <input type="number" id="fn-2-multi" placeholder="number">
+            <button id="multi">multi</button>
+            <span id="multiResult"></span>
+            </p>
+            <p>
+            <input type="number" id="fn-1-div" placeholder="number"> / <input type="number" id="fn-2-div" placeholder="number">
+            <button id="div">div</button>
+            <span id="divResult"></span>
+            </p>
+        </div>
+        <div class="palindrome">
+            <h2>palingrome</h2>
+            <p>
+                <input type="text" id="userText" placeholder="your word or number">
+                <button id="checkPalindrome">check</button>
+            </p>
+            <p id="result"></p>
+
+        </div>
+        <div class="counter">
+            <h2>counter</h2>
+            <button id="clickCounter">click</button>
+            <p id="numberOfClicks"></p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
