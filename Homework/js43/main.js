@@ -6,6 +6,19 @@ function Person(id, name, phone, email, city, description) {
     this.city = city,
     this.description = description
 };
+/* 
+class Person{
+    constructor(name, phone, email, city, description){
+        this.name = name,
+        this.phone = phone,
+        this.email =email,
+        this.city = city,
+        this.description = description,
+        this.id = Person.id++
+    }
+
+    static id = 0
+} */
 const Mercedes = new Person(0, 'Mercedes', '1029834566', 'merc@gmail.com', 'Berlin', 'car dealer');
 const Honda = new Person(1, 'Honda', '1029837463','honda@gmail.com', 'Tokio', 'motocycle engines');
 const Java = new Person(2, 'Java', '1029234566','java@gmail.com', 'Bonn', 'it-girl');
@@ -13,6 +26,7 @@ const Bond = new Person(3, 'Bond', '1029234007','bond007@gmail.com', 'London', '
 const message = document.querySelector('.message');
 const errorMessage = document.querySelector('#error');
 let persons = [Mercedes, Honda, Java, Bond];
+//let persons = JSON.parse(localStorage.getItem('persons')) || [];
 
 
 const btnContacts = document.querySelector('.btnContacts');
@@ -70,11 +84,12 @@ function renderShortInfo(){
 for(contact of contacts){
     
     contact.onclick = (event)=>{
-    //contact.classList.remove('active');
     fullInfo.innerHTML = '';
     event.currentTarget.classList.add('active');
     const id = +event.currentTarget.id.split("_")[1];
+    console.log(id)
     const element = persons.find((p)=> p.id === id);
+    console.log(element)
     const personDetail = document.createElement('div');
     personDetail.classList.add('inner');
     personDetail.innerHTML = `
@@ -119,12 +134,12 @@ function renderAddForm(){
                 count++
                 input.style.borderColor='yellowgreen';
                 newContact[input.id] = input.value;
-                
+        
                 //input.value = '';     
             }
         
         if(count === inputs.length){
-            
+            console.log(newContact)
             persons.push(newContact);
 
             for(input of inputs){

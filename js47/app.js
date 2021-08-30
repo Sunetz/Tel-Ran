@@ -22,7 +22,7 @@ function mapToRow(contact, index){
     `
 }
 
-function onAddContactHandler(e){
+/* function onAddContactHandler(e){
     e.target.preventDefault();
     
-}
+} */

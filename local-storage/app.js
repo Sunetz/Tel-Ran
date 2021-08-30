@@ -29,7 +29,7 @@ for(button of buttons){
 
         button.onclick = (event)=>{
             contacts.splice(+button.dataset.index, 1);
-            this.reset();
+            //this.reset();
             event.currentTarget.parentNode.remove();
             
         }
