@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="" defer></script>
+    <title>Http request</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        .wrapper{
+            margin: 50px auto;
+            font-family: 'Comfortaa', cursive;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .user-list{
+            list-style:none;
+        }
+        .user-list li{
+            cursor: pointer;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+        .user-list li:hover{
+            color: yellowgreen;
+        }
+        .user-list, #user, #todo{
+            width: 30%;
+        }
+        #user{
+            text-align: center;
+            padding: 10px;
+            height: fit-content;
+            _background-color: yellowgreen;
+            border: 2px gray dashed;
+            border-radius: 20px;
+            margin-right: 50px;
+        }
+        #todo ul{
+            list-style: decimal;
+        }
+        #todo ul li{
+            text-transform: capitalize;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="user-list">
+            <ul></ul>
+        </div>
+        <div id="user">
+            <h2>User info</h2>
+        </div>
+        <div id="todo">
+            <h2>To do list</h2>
+            <ul></ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
