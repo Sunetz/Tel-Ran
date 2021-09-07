@@ -1,0 +1,9 @@
+.card{
+    _border: 1px solid black;
+    margin: 0 auto;
+    background-color: yellowgreen;
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}

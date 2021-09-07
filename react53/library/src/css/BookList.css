@@ -1,0 +1,7 @@
+.book-list{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-between;
+    margin:40px auto;
+}
