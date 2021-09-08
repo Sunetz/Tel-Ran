@@ -1,0 +1,25 @@
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+li{
+    text-align: left;
+    background-color:aliceblue;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 400px;
+    padding: 20px;
+}
+button{
+    margin-right: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.like{
+    background-color: yellowgreen;
+}
+.dislike{
+    background-color: rgb(248, 100, 74);
+}
